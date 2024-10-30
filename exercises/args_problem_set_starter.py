@@ -4,9 +4,10 @@
 # Otherwise it should return False
 
 def contains_pickle(*args):
-    for arg in args:
-        if arg == "pickle":
-            return True
+    # for arg in args:
+    #     if arg == "pickle":
+    #         return True
+    return "pickle" in args
 
 print(contains_pickle("red", 45, "pickle", []))
 print(contains_pickle(1,2, "blue"))
