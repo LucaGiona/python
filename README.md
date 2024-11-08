@@ -1,5 +1,8 @@
-# Python Projekte und Übungen
+
+
+# Python Projekte und Übungen  
 ##### [English Version (see below)](#english-version)
+
 In diesem Repository befinden sich verschiedene Python-Projekte und -Übungen, die ich während meines Lernprozesses erstellt habe. Der Fokus liegt dabei auf verschiedenen Themenbereichen der Python-Programmierung.
 
 ## Ordnerstruktur
@@ -7,6 +10,7 @@ In diesem Repository befinden sich verschiedene Python-Projekte und -Übungen, d
 - **firstSteps**: Enthält Übungen und Projekte aus unterschiedlichen Kursen. Hier eine Übersicht der Quellen:
   - [Python Programming MOOC 2024](https://programming-24.mooc.fi/)
   - [One Week Python von Colt Steele](https://www.udemy.com/course/one-week-python)
+  - [Python Crash Course by freeCodeCamp.org](https://www.youtube.com/watch?v=nLRL_NcnK-4&t=14831s): Ein umfassender Python-Kurs, der die Grundlagen und fortgeschrittene Themen behandelt.
 
 Der `udemy`-Ordner enthält zusätzliche Materialien, die hier jedoch nicht veröffentlicht werden.
 
@@ -27,9 +31,12 @@ This repository contains various Python projects and exercises that I have creat
 - **firstSteps**: Contains exercises and projects from various courses. Here is an overview of the sources:
   - [Python Programming MOOC 2024](https://programming-24.mooc.fi/)
   - [One Week Python by Colt Steele](https://www.udemy.com/course/one-week-python)
+  - [Python Crash Course by freeCodeCamp.org](https://www.youtube.com/watch?v=nLRL_NcnK-4&t=14831s): A comprehensive Python course covering basics and advanced topics.
 
 The `udemy` folder contains additional materials, but they are not published here.
 
 ## Contents
 
 The exercises and projects cover a wide range of Python basics and advanced topics. The structure and code reflect my progress and learning experiences.
+
+--- 
