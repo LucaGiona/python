@@ -2,7 +2,8 @@
 **[English Version Below](#english-version)**
 # Swim Coach Time Tracker
 
-
+get Data from Coach---:
+https://github.com/headfirstpython/third
 
 Ein Schwimmtrainer stoppt regelmäßig die Zeiten seiner Schwimmer (Kinder/Teilnehmer) und notiert diese zunächst auf einem Klemmbrett. Später gibt er diese Zeiten manuell in Excel ein, um sie als kleine Datensätze zu speichern. Er benennt die Dateien dabei nach dem Format **`Name-Alter-Distanz_Art.xls`** und berechnet den Durchschnitt der Zeiten für jeden Schwimmer und jede Disziplin.
 
