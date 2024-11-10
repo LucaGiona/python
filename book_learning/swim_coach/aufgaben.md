@@ -17,4 +17,16 @@ print(stroke)
 
 ````
 ##### 2. Daten in der Datei verarbieten
+#####Listendaten verarbeiten
 
+- ziehen von Stoppzahlen aus Liste 
+- umwandeln von strings in int
+- umwandeln von minuten und sekund inhunederstel ---
+- iteration über verschieden Stoppzeiten
+- Durchschitt errechnen 
+-  Rüchwandlung in str Minuten/ Sekunden
+-  Ausgeben aller Werte
+  
+
+3. Lisen von Dateien
+(Funktionen, Module und Dateien)
