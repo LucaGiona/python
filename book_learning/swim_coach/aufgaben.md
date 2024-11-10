@@ -2,7 +2,7 @@
 
 ###### 1. Daten aus Dateinamen extrahieren
 
-![bsp Bild](datei-foto-bsp-swimCoach.gif)
+![bsp Bild](/book_learning/swim_coach/Assets/datei-foto-bsp-swimCoach.gif)
 
 
 ````
@@ -26,7 +26,8 @@ print(stroke)
 - Durchschitt errechnen 
 -  Rüchwandlung in str Minuten/ Sekunden
 -  Ausgeben aller Werte
-  
+
+ aufgeben 1 & 2 in name_intro Ordner 
 
 3. Lisen von Dateien
 (Funktionen, Module und Dateien)
