@@ -27,7 +27,7 @@ print(stroke)
 -  Rüchwandlung in str Minuten/ Sekunden
 -  Ausgeben aller Werte
 
- aufgeben 1 & 2 in name_intro Ordner 
+ aufgeben 1 & 2 inChapter01 Ordner 
 
-3. Lisen von Dateien
+3. Listen von Dateien
 (Funktionen, Module und Dateien)

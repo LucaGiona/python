@@ -1,7 +1,8 @@
 import statistics
 
 FN = "Darius-13-100m-Fly.txt"
-FOLDER = "Data-from-Coach/download-swim-data/swimdata/"
+FOLDER="../download-swim-data/swimdata/"
+
 
 with open(FOLDER + FN) as file:
     lines = file.readlines()
