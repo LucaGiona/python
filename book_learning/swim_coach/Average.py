@@ -1,4 +1,5 @@
 import os
+import statistics
 
 # Pfad zum swimdata-Ordner
 FOLDER = "Data-from-Coach/download-swim-data/swimdata/"
@@ -35,10 +36,34 @@ converted_time = (int(minutes)* (60*100)) + (int(seconds) * 100) +int(hunderth)
 print(converted_time)
 
 print("---------------------------------")
+converts= []
 for t in times:
         minutes, rest = t.split(":")
         seconds, hunderths = rest.split(".")
         converted_time = (int(minutes)*60*100) + (int(seconds)*100) + int(hunderths)
-        
+        converts.append(converted_time)
+        # can be refracturated !!
         print(t)
         print(converted_time)
+print("Converts: ", converts)
+
+average = statistics.mean(converts)
+print("Average: ", average)
+
+# average = round(average / 100 , 2)
+# print("Rounded Average: ", average)
+
+min_sec, hunderths = str(round(average / 100, 2)).split(".")
+print("Splited:", min_sec)
+
+minutes = int(min_sec)//60
+print("Minutes: ", minutes)
+seconds = int(min_sec) - minutes*60
+print(seconds)
+
+print("_______________________-")
+print(minutes, seconds, hunderths)
+
+average = str(minutes) + ":" + str(seconds) + "." + hunderths
+
+print("Average: ", average)
