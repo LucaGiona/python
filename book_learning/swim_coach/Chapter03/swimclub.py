@@ -34,8 +34,4 @@ def read_swim_data(filename):
 
     
 
-    return swimmer, age, distance, stroke, times, average
-
-
-   
-
+    return swimmer, age, distance, stroke, times, average, converts
