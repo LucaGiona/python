@@ -30,10 +30,12 @@ def read_swim_data(filename):
     min_secs, hunderths = str(round(average_hs / 100 ,2)).split(".")
     minutes = int(min_secs) // 60
     seconds = int(min_secs) - minutes*60
-    average = str(minutes) + ":" + str(seconds) + "." + hunderths
+    average = f"{minutes}:{seconds}.{hunderths}"
 
     
 
     return swimmer, age, distance, stroke, times, average
+
+
    
 

@@ -31,3 +31,13 @@ print(stroke)
 
 3. Listen von Dateien
 (Funktionen, Module und Dateien)
+In Juypiter getestet ob die Schleifen die importierten Module übernehmen.
+Einfügen einer Funktion in swimclub.py
+Anpassung der ZIP, so dass nur relevante Files improtiert werden.
+Anpassung der Schleife, so dass Daten die die Ausnahme sind(zum Beipiel: Schwimmer braucht weniger als eine Minute) gut gelesen werden.
+
+
+4. Formatierte String Literale -- Tabellen aus Daten  (Chapter 03)
+Sieh auch Foto weiter oben
+
+-Stringverkettung
