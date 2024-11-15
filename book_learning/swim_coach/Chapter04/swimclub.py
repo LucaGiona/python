@@ -10,13 +10,13 @@ def read_swim_data(filename):
 
     name of swimmer in filename -> extracts all the data see below:
      '''
-   
-    swimmer, age, distance, stroke = filename.removesuffix('.txt').split("-")
 
+    swimmer, age, distance, stroke = filename.removesuffix('.txt').split("-")
+  
     with open(FOLDER + filename) as file:
         lines = file.readlines()
         times= lines[0].strip().split(",")
-
+   
     converts = []
     for t in times:
         #Anpassung wenn keine Minuten geschwommen wurden
@@ -41,6 +41,7 @@ def read_swim_data(filename):
     return swimmer, age, distance, stroke, times, average, converts  #returned as a tuple
 
 def produce_bar_chart(fn):
+    
     """Given the name of a swimmer's file, produce a HTML/SVG-based bar chart.
      
     Save the chart to the CHARTS folder. Return the path to the bar chart file.
@@ -88,3 +89,18 @@ def produce_bar_chart(fn):
 # # Vollständigen Pfad erstellen und im Browser öffnen
 # full_path = os.path.realpath(save_to)
 # webbrowser.open("file://" + full_path)
+# import os
+
+# if __name__ == "__main__":
+#     # Alle Dateien im Verzeichnis FOLDER abrufen
+#     swim_files = os.listdir(FOLDER)
+#     if ".DS_Store" in swim_files:  # Entferne .DS_Store, falls vorhanden (nur auf macOS)
+#         swim_files.remove(".DS_Store")
+    
+#     print("Anzahl der Dateien:", len(swim_files))
+    
+#     for file in swim_files:
+#         print(f"\nVerarbeite Datei: {file}")
+#         data = read_swim_data(file)
+#         print(f"Ergebnis für {file}: {data}")
+
