@@ -1,4 +1,4 @@
-from flask import Flask, session, render_template
+from flask import Flask, session, render_template, request
 
 import os
 import swimclub
@@ -10,7 +10,7 @@ app.secret_key = "You will never guess..."
 def index():
     return render_template(
         "index.html",
-        title="Welcome to the Swimclub system"      
+        title="Welcome to the Swimclub"      
     )
 
 
@@ -39,7 +39,23 @@ def display_swimmers():
         data = sorted(session["swimmers"])
     )
 
+@app.post("/showfiles")
+def display_swimmers_files():
+    populate_data()
+    name = request.form["swimmer"]
+    return render_template(
+        "select.html",
+        title = "Select an event",
+        url="/showbarchart",
+        select_id = "file",
+        data = session["swimmers"][name]
+    )
 
+@app.post("/showbarchart")
+def show_bar_chart():
+    file_id = request.form["file"]
+    location = swimclub.produce_bar_chart(file_id, "templates/")
+    return render_template(location.split("/")[-1])
 
 
 if __name__ == "__main__":
