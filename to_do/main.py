@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import filedialog
 
 def add_task():
     if task.get() != "":
@@ -18,6 +19,29 @@ def remove_task():
         task_treeview.delete(selected_item)
     else:
         print("Bitte einen Task markieren!")
+
+def save_file():
+    file_name = filedialog.asksaveasfilename(defaultextension=".txt",
+                                             initialdir="/Users/l.maranta/Desktop/python/to_do/to_do_list_txt",
+                                             title="Datei speichern")
+    #print(file_name)
+    if file_name:
+        file = open(file_name, "w")
+        for line in task_treeview.get_children():
+            for value in task_treeview.item(line)["values"]:
+                file.write(value + "\n")
+        file.close()
+
+
+def open_file():
+    file_name = filedialog.askopenfilename(initialdir="/Users/l.maranta/Desktop/python/to_do/to_do_list_txt",
+                                           title="Datei öffnen"  
+                                            )
+    if file_name:
+        file = open(file_name, "r")
+        for line in file.readlines():
+            task_treeview.insert(parent="", index="end", values=(line.replace(" ", "\ ")))
+        file.close()
 
 root = tk.Tk()
 root.title("ToDo_List")
@@ -64,5 +88,15 @@ delete_task_button = ttk.Button(task_frame, text="markierten Task entfernen",
                                 command=remove_task)
 delete_task_button.grid(row=1, column=0, columnspan=2, sticky="ew")
 
+
+#Menü mit Speichermechanismus
+application_menu = tk.Menu(root)
+root.configure(menu=application_menu)
+
+file_menu = tk.Menu(application_menu)
+file_menu.add_command(label="Datei speichern", command=save_file)
+file_menu.add_command(label="Datei öffnen", command=open_file)
+
+application_menu.add_cascade(label="Datei", menu=file_menu)
 
 root.mainloop()
